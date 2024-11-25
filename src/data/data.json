@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Lake Ciwilung",
+        "city": "Bandung",
+        "image": "./../images/image_destination1.png",
+        "rating": 4.8,
+        "price": 2500000
+    },
+    {
+        "id": 2,
+        "name": "White House",
+        "city": "Jakarta",
+        "image": "./../images/image_destination2.png",
+        "rating": 4.5,
+        "price": 1500000
+    },
+    {
+        "id": 3,
+        "name": "Hill of Hope",
+        "city": "Bogor",
+        "image": "./../images/image_destination3.png",
+        "rating": 4.7,
+        "price": 2000000
+    },
+    {
+        "id": 4,
+        "name": "Lake Lembah Dewata",
+        "city": "Bali",
+        "image": "./../images/image_destination4.png",
+        "rating": 4.9,
+        "price": 3000000
+    },
+    {
+        "id": 5,
+        "name": "Lake Toba",
+        "city": "Medan",
+        "image": "./../images/image_destination5.png",
+        "rating": 4.6,
+        "price": 1800000
+    },
+    {
+        "id": 6,
+        "name": "Lake Laut Tawar",
+        "city": "Aceh",
+        "image": "./../images/image_destination6.png",
+        "rating": 4.8,
+        "price": 2500000        
+    },
+    {
+        "id": 7,
+        "name": "Lake Laut Tawar",
+        "city": "Aceh",
+        "image": "./../images/image_destination6.png",
+        "rating": 4.8,
+        "price": 2500000        
+    },
+    {
+        "id": 8,
+        "name": "Lake Laut Tawar",
+        "city": "Aceh",
+        "image": "./../images/image_destination6.png",
+        "rating": 4.8,
+        "price": 2500000        
+    },
+    {
+        "id": 9,
+        "name": "Lake Laut Tawar",
+        "city": "Aceh",
+        "image": "./../images/image_destination6.png",
+        "rating": 4.8,
+        "price": 2500000        
+    },
+    {
+        "id": 10,
+        "name": "Lake Laut Tawar",
+        "city": "Aceh",
+        "image": "./../images/image_destination6.png",
+        "rating": 4.8,
+        "price": 2500000        
+    }
+]
