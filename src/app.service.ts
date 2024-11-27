@@ -73,14 +73,16 @@ export class AppService {
   }
 
   async getListData(): Promise<detailData[]> {
-    for (const item of rawData) {
+    const dataCopy = JSON.parse(JSON.stringify(rawData));
+    for (const item of dataCopy) {
       item.image = await this.convertImageToBase64(item.image);
     }
-    return rawData;
+    return dataCopy;
   }
 
   async getDetailData(id: number): Promise<detailData> {
-    const item = rawData.find((item) => item.id === id);
+    const dataCopy = JSON.parse(JSON.stringify(rawData));
+    const item = dataCopy.find((item) => item.id === id);
     if (item) {
       item.image = await this.convertImageToBase64(item.image);
     }
