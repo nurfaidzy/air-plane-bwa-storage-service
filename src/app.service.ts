@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import rawData from './data/data.json';
-import { join } from 'path';
+import { join, resolve } from 'path';
+import { readFileSync } from 'fs';
 
 interface detailData {
   id: number;
@@ -13,19 +14,37 @@ interface detailData {
 
 @Injectable()
 export class AppService {
-  getImages = (imageUrl: string): string => {
-    const resolvedPath = join(
-      __dirname,
-      '..',
-      'images',
-      imageUrl.split('/').pop(),
-    );
-    return resolvedPath;
-  };
+  private convertImageToBase64(imagePath: string): string {
+    const basePath = __dirname.includes('/dist/')
+      ? join(__dirname, '../src/images')
+      : join(__dirname, '../src/images');
+
+    const resolvedPath = resolve(basePath, imagePath);
+    try {
+      const file = readFileSync(resolvedPath);
+      const base64 = file.toString('base64');
+      const mimeType = this.getMimeType(resolvedPath);
+      return `data:${mimeType};base64,${base64}`;
+    } catch (error) {
+      return JSON.stringify(error);
+    }
+  }
+
+  private getMimeType(filePath: string): string {
+    const extension = filePath.split('.').pop().toLowerCase();
+    const mimeTypes = {
+      jpg: 'image/jpeg',
+      jpeg: 'image/jpeg',
+      png: 'image/png',
+      gif: 'image/gif',
+      bmp: 'image/bmp',
+    };
+    return mimeTypes[extension] || 'application/octet-stream';
+  }
 
   getListData(): detailData[] {
     rawData.forEach((item) => {
-      item.image = this.getImages(item.image);
+      item.image = this.convertImageToBase64(item.image);
     });
     return rawData;
   }
