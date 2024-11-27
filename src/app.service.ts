@@ -3,6 +3,7 @@ import rawData from './data/data.json';
 import { join, resolve } from 'path';
 import { readFileSync } from 'fs';
 import sharp from 'sharp';
+// import { ResponseUtil } from './utils/responses';
 
 interface detailData {
   id: number;
@@ -56,7 +57,7 @@ export class AppService {
 
       return `data:${mimeType};base64,${compressedBuffer.toString('base64')}`;
     } catch (error) {
-      return JSON.stringify(error);
+      throw new Error(`Error converting image to base64: ${error.message}`);
     }
   }
 
