@@ -78,4 +78,12 @@ export class AppService {
     }
     return rawData;
   }
+
+  async getDetailData(id: number): Promise<detailData> {
+    const item = rawData.find((item) => item.id === id);
+    if (item) {
+      item.image = await this.convertImageToBase64(item.image);
+    }
+    return item;
+  }
 }
