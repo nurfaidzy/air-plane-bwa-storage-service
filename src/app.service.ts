@@ -3,7 +3,6 @@ import rawData from './data/data.json';
 import { join, resolve } from 'path';
 import { readFileSync } from 'fs';
 import sharp from 'sharp';
-// import { ResponseUtil } from './utils/responses';
 
 interface detailData {
   id: number;
@@ -12,6 +11,9 @@ interface detailData {
   image: string;
   rating: number;
   price: number;
+  about: string;
+  photos: string[];
+  interest: string[];
 }
 
 @Injectable()
@@ -81,12 +83,22 @@ export class AppService {
     return dataCopy;
   }
 
-  async getDetailData(id: number): Promise<detailData> {
-    const dataCopy = JSON.parse(JSON.stringify(rawData));
-    const item = dataCopy.find((item) => item.id === id);
-    if (item) {
-      item.image = await this.convertImageToBase64(item.image);
-    }
-    return item;
+  async proccssPhoto(imagePath: string): Promise<string> {
+    return await this.convertImageToBase64(imagePath);
   }
+
+  async getDetailData(id: number): Promise<detailData | null> {
+    const item = rawData.find((item) => item.id === id);
+    if (!item) return null;
+    const itemCopy = { ...item, interest: item.interest || [] };
+    itemCopy.image = await this.convertImageToBase64(itemCopy.image);
+    if (itemCopy.photos) {
+      itemCopy.photos = await Promise.all(
+        itemCopy.photos.map((photo) => this.convertImageToBase64(photo))
+      );
+    }
+  
+    return itemCopy;
+  }
+  
 }

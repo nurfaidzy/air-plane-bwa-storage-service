@@ -5,7 +5,19 @@
         "city": "Bandung",
         "image": "./../images/image_destination1.png",
         "rating": 4.8,
-        "price": 2500000
+        "price": 2500000,
+        "about": "Lake Ciwilung is a beautiful lake located in Bandung, West Java. The lake is surrounded by hills and mountains, making it a perfect destination for nature lovers. The lake is also home to a variety of wildlife, including birds, fish, and other animals. Visitors can enjoy a variety of activities at Lake Ciwilung, including boating, fishing, and hiking. The lake is also a popular spot for picnics and family outings. Whether you're looking for a peaceful retreat or an adventure-filled vacation, Lake Ciwilung has something for everyone.",
+        "photos": [
+            "./../images/image_destination6.png",
+            "./../images/image_destination7.png",
+            "./../images/image_destination8.png"
+        ],
+        "interest": [
+            "Nature",
+            "Hiking",
+            "Fishing",
+            "Boating"
+        ]
     },
     {
         "id": 2,
@@ -13,7 +25,19 @@
         "city": "Jakarta",
         "image": "./../images/image_destination2.png",
         "rating": 4.5,
-        "price": 1500000
+        "price": 1500000,
+        "about": "White House is a beautiful house located in Jakarta, Indonesia. The house is known for its stunning architecture and design, as well as its picturesque surroundings. The house is surrounded by lush gardens and trees, making it a peaceful and tranquil retreat. Visitors can enjoy a variety of activities at White House, including hiking, bird watching, and picnicking. The house is also a popular spot for weddings and other special events. Whether you're looking for a peaceful getaway or a romantic escape, White House has something for everyone.",
+        "photos": [
+            "./../images/image_destination9.png",
+            "./../images/image_destination10.png",
+            "./../images/image_destination6.png"
+        ],
+        "interest": [
+            "Architecture",
+            "Design",
+            "Gardening",
+            "Weddings"
+        ]
     },
     {
         "id": 3,
@@ -21,7 +45,19 @@
         "city": "Bogor",
         "image": "./../images/image_destination3.png",
         "rating": 4.7,
-        "price": 2000000
+        "price": 2000000,
+        "about": "Hill of Hope is a beautiful hill located in Bogor, Indonesia. The hill is known for its stunning views of the surrounding countryside, as well as its peaceful and tranquil atmosphere. The hill is a popular spot for hiking, bird watching, and picnicking. Visitors can also enjoy a variety of activities at Hill of Hope, including horseback riding, mountain biking, and camping. Whether you're looking for a peaceful retreat or an adventure-filled vacation, Hill of Hope has something for everyone.",
+        "photos": [
+            "./../images/image_destination7.png",
+            "./../images/image_destination8.png",
+            "./../images/image_destination9.png"
+        ],
+        "interest": [
+            "Nature",
+            "Hiking",
+            "Bird Watching",
+            "Picnicking"
+        ]
     },
     {
         "id": 4,
@@ -29,7 +65,19 @@
         "city": "Bali",
         "image": "./../images/image_destination4.png",
         "rating": 4.9,
-        "price": 3000000
+        "price": 3000000,
+        "about": "Lake Lembah Dewata is a beautiful lake located in Bali, Indonesia. The lake is known for its stunning views of the surrounding mountains and forests, as well as its crystal-clear waters. The lake is a popular spot for swimming, boating, and fishing. Visitors can also enjoy a variety of activities at Lake Lembah Dewata, including hiking, bird watching, and picnicking. Whether you're looking for a peaceful retreat or an adventure-filled vacation, Lake Lembah Dewata has something for everyone.",
+        "photos": [
+            "./../images/image_destination10.png",
+            "./../images/image_destination6.png",
+            "./../images/image_destination7.png"
+        ],
+        "interest": [
+            "Nature",
+            "Hiking",
+            "Fishing",
+            "Boating"
+        ]
     },
     {
         "id": 5,
@@ -37,46 +85,18 @@
         "city": "Medan",
         "image": "./../images/image_destination5.png",
         "rating": 4.6,
-        "price": 1800000
-    },
-    {
-        "id": 6,
-        "name": "Lake Laut Tawar",
-        "city": "Aceh",
-        "image": "./../images/image_destination6.png",
-        "rating": 4.8,
-        "price": 2500000        
-    },
-    {
-        "id": 7,
-        "name": "Lake Laut Tawar",
-        "city": "Aceh",
-        "image": "./../images/image_destination6.png",
-        "rating": 4.8,
-        "price": 2500000        
-    },
-    {
-        "id": 8,
-        "name": "Lake Laut Tawar",
-        "city": "Aceh",
-        "image": "./../images/image_destination6.png",
-        "rating": 4.8,
-        "price": 2500000        
-    },
-    {
-        "id": 9,
-        "name": "Lake Laut Tawar",
-        "city": "Aceh",
-        "image": "./../images/image_destination6.png",
-        "rating": 4.8,
-        "price": 2500000        
-    },
-    {
-        "id": 10,
-        "name": "Lake Laut Tawar",
-        "city": "Aceh",
-        "image": "./../images/image_destination6.png",
-        "rating": 4.8,
-        "price": 2500000        
+        "price": 1800000,
+        "about": "Lake Toba is a beautiful lake located in Medan, Indonesia. The lake is known for its stunning views of the surrounding mountains and forests, as well as its crystal-clear waters. The lake is a popular spot for swimming, boating, and fishing. Visitors can also enjoy a variety of activities at Lake Toba, including hiking, bird watching, and picnicking. Whether you're looking for a peaceful retreat or an adventure-filled vacation, Lake Toba has something for everyone.",
+        "photos": [
+            "./../images/image_destination8.png",
+            "./../images/image_destination9.png",
+            "./../images/image_destination10.png"
+        ],
+        "interest": [
+            "Nature",
+            "Hiking",
+            "Fishing",
+            "Boating"
+        ]
     }
 ]
