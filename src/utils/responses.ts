@@ -7,7 +7,7 @@ export class ResponseUtil {
     };
   }
 
-  static error(message = 'An error occurred', errorCode = 500): object {
+  static error(message = 'server error', errorCode = 500): object {
     return {
       status: 'error',
       message,
